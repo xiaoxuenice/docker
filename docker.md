@@ -1,3 +1,4 @@
+#!/bin/sh
 -------docker------------------------------------------------
 echo  	net.ipv4.ip_forward=1 > /usr/lib/sysctl.d/00-system.conf && systemctl restart network && systemctl restart docker 
 #容器提交成为镜像的时候记住 -v 挂载的目录不会带走
